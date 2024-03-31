@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from '../lib/main'
+import React from 'react';
+import './App.css';
+import ThemeProvider from '../lib/models/ThemeProvider';
+import {Button} from '../lib/main';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Button>button</Button>
-    </>
-  )
+    <ThemeProvider theme={{theme: 'light', setTheme: () => {}}}>
+      <Button fullWidth>안녕?</Button>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;

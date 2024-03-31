@@ -1,3 +1,1 @@
-export { Button } from './components/Button'
-export { Input } from './components/Input'
-export { Label } from './components/Label'
+export {Button, Input, Label} from './components/atoms';
