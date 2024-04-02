@@ -1,7 +1,12 @@
 /* lib/components/Button/styles.module.css */
+@import '../../variable.scss';
+@import '../../mixins.scss';
+
 .button {
   border: none;
-  background-color: red;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
 
   &.md {
     padding: 0.5rem 1rem;
@@ -20,5 +25,27 @@
 
   &.fullWidth {
     width: 100%;
+  }
+
+  &.primary {
+    background-color: theme-var($--theme-button-bg-primary);
+    color: $color-white;
+
+    &:hover {
+      background-color: theme-var($--theme-button-bg-primary-hover);
+    }
+  }
+
+  &.error {
+    background-color: theme-var($--theme-button-bg-error);
+    color: $color-white;
+
+    &:hover {
+      background-color: theme-var($--theme-button-bg-error-hover);
+    }
+  }
+
+  &:hover {
+    background-color: theme-var($--theme-button-bg-defalut-hover);
   }
 }
