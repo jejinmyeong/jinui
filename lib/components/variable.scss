@@ -1,0 +1,175 @@
+@import './mixins.scss';
+
+$color-white: #ffffff;
+
+$--theme-color-red-alpha: --theme-color-red-alpha;
+$--theme-color-orange-alpha: --theme-color-orange-alpha;
+$--theme-color-yellow-alpha: --theme-color-yellow-alpha;
+$--theme-color-green-alpha: --theme-color-green-alpha;
+$--theme-color-mint-alpha: --theme-color-mint-alpha;
+$--theme-color-teal-alpha: --theme-color-teal-alpha;
+$--theme-color-cyan-alpha: --theme-color-cyan-alpha;
+$--theme-color-blue-alpha: --theme-color-blue-alpha;
+$--theme-color-indigo-alpha: --theme-color-indigo-alpha;
+$--theme-color-purple-alpha: --theme-color-purple-alpha;
+$--theme-color-pink-alpha: --theme-color-pink-alpha;
+$--theme-color-brown-alpha: --theme-color-brown-alpha;
+$--theme-color-gray-alpha: --theme-color-gray-alpha;
+$--theme-color-red: --theme-color-red;
+$--theme-color-orange: --theme-color-orange;
+$--theme-color-yellow: --theme-color-yellow;
+$--theme-color-green: --theme-color-green;
+$--theme-color-mint: --theme-color-mint;
+$--theme-color-teal: --theme-color-teal;
+$--theme-color-cyan: --theme-color-cyan;
+$--theme-color-blue: --theme-color-blue;
+$--theme-color-indigo: --theme-color-indigo;
+$--theme-color-purple: --theme-color-purple;
+$--theme-color-pink: --theme-color-pink;
+$--theme-color-brown: --theme-color-brown;
+$--theme-color-gray: --theme-color-gray;
+$--theme-color-system-gray: --theme-color-system-gray;
+$--theme-color-system-gray2: --theme-color-system-gray2;
+$--theme-color-system-gray3: --theme-color-system-gray3;
+$--theme-color-system-gray4: --theme-color-system-gray4;
+$--theme-color-system-gray5: --theme-color-system-gray5;
+$--theme-color-system-gray6: --theme-color-system-gray6;
+
+$--theme-color-red-accessable: --theme-color-red-accessable;
+$--theme-color-orange-accessable: --theme-color-orange-accessable;
+$--theme-color-yellow-accessable: --theme-color-yellow-accessable;
+$--theme-color-green-accessable: --theme-color-green-accessable;
+$--theme-color-mint-accessable: --theme-color-mint-accessable;
+$--theme-color-teal-accessable: --theme-color-teal-accessable;
+$--theme-color-cyan-accessable: --theme-color-cyan-accessable;
+$--theme-color-blue-accessable: --theme-color-blue-accessable;
+$--theme-color-indigo-accessable: --theme-color-indigo-accessable;
+$--theme-color-purple-accessable: --theme-color-purple-accessable;
+$--theme-color-pink-accessable: --theme-color-pink-accessable;
+$--theme-color-brown-accessable: --theme-color-brown-accessable;
+$--theme-color-red-accessable: --theme-color-red-accessable;
+$--theme-color-gray-accessable: --theme-color-gray-accessable;
+$--theme-color-system-gray-accessable: --theme-color-system-gray-accessable;
+$--theme-color-system-gray2-accessable: --theme-color-system-gray2-accessable;
+$--theme-color-system-gray3-accessable: --theme-color-system-gray3-accessable;
+$--theme-color-system-gray4-accessable: --theme-color-system-gray4-accessable;
+$--theme-color-system-gray5-accessable: --theme-color-system-gray5-accessable;
+$--theme-color-system-gray6-accessable: --theme-color-system-gray6-accessable;
+
+$--theme-button-bg-primary: --theme-button-bg-primary;
+$--theme-button-bg-primary-hover: --theme-button-bg-primary-hover;
+$--theme-button-bg-error: --theme-button-bg-error;
+$--theme-button-bg-error-hover: --theme-button-bg-error-hover;
+$--theme-button-bg-defalut: --theme-button-bg-defalut;
+$--theme-button-bg-defalut-hover: --theme-button-bg-defalut-hover;
+
+$theme-map-light: (
+  $--theme-color-red-alpha: #ffccd2,
+  $--theme-color-orange-alpha: #ffdfb1,
+  $--theme-color-yellow-alpha: #ffedb0,
+  $--theme-color-green-alpha: #c1edbf,
+  $--theme-color-mint-alpha: #ace7e3,
+  $--theme-color-teal-alpha: #bbebf6,
+  $--theme-color-cyan-alpha: #b3e3f9,
+  $--theme-color-blue-alpha: #bbe2ff,
+  $--theme-color-indigo-alpha: #cccdf4,
+  $--theme-color-purple-alpha: #e3c2f3,
+  $--theme-color-pink-alpha: #ffc9d5,
+  $--theme-color-brown-alpha: #e1c9aa,
+  $--theme-color-gray-alpha: #efeff5,
+  $--theme-color-red: #ff3b2f,
+  $--theme-color-orange: #ff9500,
+  $--theme-color-yellow: #ffcc02,
+  $--theme-color-green: #27cd41,
+  $--theme-color-mint: #00c7be,
+  $--theme-color-teal: #59adc4,
+  $--theme-color-cyan: #55bef0,
+  $--theme-color-blue: #007aff,
+  $--theme-color-indigo: #5856d6,
+  $--theme-color-purple: #af52de,
+  $--theme-color-pink: #ff2d55,
+  $--theme-color-brown: #a2845e,
+  $--theme-color-gray: #8e8e93,
+  $--theme-color-system-gray: #8e8e93,
+  $--theme-color-system-gray2: #aeaeb2,
+  $--theme-color-system-gray3: #c7c7cc,
+  $--theme-color-system-gray4: #c7c7cc,
+  $--theme-color-system-gray5: #e5e5ea,
+  $--theme-color-system-gray6: #f2f2f7,
+
+  $--theme-color-red-accessable: #d70015,
+  $--theme-color-orange-accessable: #c93400,
+  $--theme-color-yellow-accessable: #a15901,
+  $--theme-color-green-accessable: #027d1b,
+  $--theme-color-mint-accessable: #0d817c,
+  $--theme-color-teal-accessable: #008299,
+  $--theme-color-cyan-accessable: #0271a4,
+  $--theme-color-blue-accessable: #0040dd,
+  $--theme-color-indigo-accessable: #3634a3,
+  $--theme-color-purple-accessable: #ac44ab,
+  $--theme-color-pink-accessable: #d20f44,
+  $--theme-color-brown-accessable: #7f6545,
+  $--theme-color-gray-accessable: #69696f,
+  $--theme-color-system-gray-accessable: #6c6c70,
+  $--theme-color-system-gray2-accessable: #8e8e93,
+  $--theme-color-system-gray3-accessable: #aeaeb2,
+  $--theme-color-system-gray4-accessable: #bcbcc0,
+  $--theme-color-system-gray5-accessable: #d8d8dc,
+  $--theme-color-system-gray6-accessable: #ebebf0,
+
+  $--theme-button-bg-primary: var($--theme-color-blue),
+  $--theme-button-bg-primary-hover: var($--theme-color-blue-accessable),
+  $--theme-button-bg-error: var($--theme-color-red),
+  $--theme-button-bg-error-hover: var($--theme-color-red-accessable),
+  $--theme-button-bg-defalut: $color-white,
+  $--theme-button-bg-defalut-hover: var($--theme-color-system-gray6-accessable),
+);
+
+$theme-map-dark: (
+  $--theme-color-red: #ff453a,
+  $--theme-color-orange: #ff9f0a,
+  $--theme-color-yellow: #ffd60a,
+  $--theme-color-green: #32d74b,
+  $--theme-color-mint: #66d4cf,
+  $--theme-color-teal: #6ac4dc,
+  $--theme-color-cyan: #5ac8f5,
+  $--theme-color-blue: #0a84ff,
+  $--theme-color-indigo: #5e5ce6,
+  $--theme-color-purple: #bf5af2,
+  $--theme-color-pink: #ff375f,
+  $--theme-color-brown: #ac8e68,
+  $--theme-color-gray: #98989d,
+  $--theme-color-system-gray: #8e8e93,
+  $--theme-color-system-gray2: #636366,
+  $--theme-color-system-gray3: #48484a,
+  $--theme-color-system-gray4: #3a3a3c,
+  $--theme-color-system-gray5: #2c2c2e,
+  $--theme-color-system-gray6: #1c1c1e,
+
+  $--theme-color-red-accessable: #ff6861,
+  $--theme-color-orange-accessable: #ffb33f,
+  $--theme-color-yellow-accessable: #ffd426,
+  $--theme-color-green-accessable: #32de4b,
+  $--theme-color-mint-accessable: #67d4cf,
+  $--theme-color-teal-accessable: #5de6ff,
+  $--theme-color-cyan-accessable: #70d7ff,
+  $--theme-color-blue-accessable: #419cff,
+  $--theme-color-indigo-accessable: #7d7aff,
+  $--theme-color-purple-accessable: #da8fff,
+  $--theme-color-pink-accessable: #ff6482,
+  $--theme-color-brown-accessable: #b59469,
+  $--theme-color-gray-accessable: #98989d,
+  $--theme-color-system-gray-accessable: #aeaeb2,
+  $--theme-color-system-gray2-accessable: #7c7c80,
+  $--theme-color-system-gray3-accessable: #545456,
+  $--theme-color-system-gray4-accessable: #444446,
+  $--theme-color-system-gray5-accessable: #363638,
+  $--theme-color-system-gray6-accessable: #242426,
+
+  $--theme-button-bg-primary: var($--theme-color-blue),
+  $--theme-button-bg-primary-hover: var($--theme-color-blue-accessable),
+  $--theme-button-bg-error: var($--theme-color-red),
+  $--theme-button-bg-error-hover: var($--theme-color-red-accessable),
+  $--theme-button-bg-defalut: $color-white,
+  $--theme-button-bg-defalut-hover: var($--theme-color-system-gray6-accessable),
+);
