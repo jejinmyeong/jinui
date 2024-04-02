@@ -1,0 +1,62 @@
+@import '../../variable.scss';
+@import '../../mixins.scss';
+
+.tag {
+  display: table-cell;
+  padding: 0.175rem 0.225rem;
+  font-size: 0.5rem;
+  font-weight: 700;
+  border-radius: 4px;
+  // box-shadow: 0 0 0 1px currentColor inset;
+
+  &.colorRed {
+    background-color: theme-var(--theme-color-red-alpha);
+    color: theme-var(--theme-color-red-accessable);
+  }
+  &.colorOrange {
+    background-color: theme-var(--theme-color-orange-alpha);
+    color: theme-var(--theme-color-orange-accessable);
+  }
+  &.colorYellow {
+    background-color: theme-var(--theme-color-yellow-alpha);
+    color: theme-var(--theme-color-yellow-accessable);
+  }
+  &.colorGreen {
+    background-color: theme-var(--theme-color-green-alpha);
+    color: theme-var(--theme-color-green-accessable);
+  }
+  &.colorMint {
+    background-color: theme-var(--theme-color-mint-alpha);
+    color: theme-var(--theme-color-mint-accessable);
+  }
+  &.colorTeal {
+    background-color: theme-var(--theme-color-teal-alpha);
+    color: theme-var(--theme-color-teal-accessable);
+  }
+  &.colorBlue {
+    background-color: theme-var(--theme-color-blue-alpha);
+    color: theme-var(--theme-color-blue-accessable);
+  }
+  &.colorIndigo {
+    background-color: theme-var(--theme-color-indigo-alpha);
+    color: theme-var(--theme-color-indigo-accessable);
+  }
+  &.colorPurple {
+    background-color: theme-var(--theme-color-purple-alpha);
+    color: theme-var(--theme-color-purple-accessable);
+  }
+  &.colorPink {
+    background-color: theme-var(--theme-color-pink-alpha);
+    color: theme-var(--theme-color-pink-accessable);
+  }
+  &.colorBrown {
+    background-color: theme-var(--theme-color-brown-alpha);
+    color: theme-var(--theme-color-brown-accessable);
+  }
+  &.colorGray {
+    background-color: theme-var(--theme-color-gray-alpha);
+    color: theme-var(--theme-color-gray-accessable);
+  }
+  &.colorDefalut {
+  }
+}
